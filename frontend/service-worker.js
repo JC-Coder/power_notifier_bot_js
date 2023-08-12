@@ -2,7 +2,7 @@ self.addEventListener("message", (event) => {
   if (event.data.payload.action == "charge") {
     const isCharging = event.data.payload.isCharging;
 
-    fetch("http://localhost:8000/charge", {
+    fetch("https://pnb.onrender.com/charge", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
